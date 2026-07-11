@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(to left, #181818, #3a3a3a, #555);
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00e3ff;
+}
+
+nav .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+nav .links a:hover {
+    text-decoration: underline;
+    color: #00e3ff;
+}
+
+nav .buttons {
+    display: flex;
+    align-items: center;
+}
+
+nav .buttons button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(7, 113, 219);
+    transition: 0.2s ease;
+}
+
+nav .buttons button:hover {
+    background-color: black;
+    border: 2px solid rgb(7, 113, 219);
+    box-shadow: 0 0 10px 4px rgb(7, 113, 219);
+}
+
+.section {
+    margin: 50px 20px;
+    padding: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px linear-gradient(to left, #181818, #3a3a3a, #555);
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #00e3ff;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+table {
+    width: 60%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 25%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #555;
+    color: #fff;
+}
+
+table td {
+    text-align: center;
+}
+
+.section.pricing table th {
+    background-color: #00e3ff;
+    color: #333;
+}

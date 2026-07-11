@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(to left, #181818, #3a3a3a, #555);
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00e3ff;
+}
+
+nav .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+nav .links a:hover {
+    text-decoration: underline;
+    color: #00e3ff;
+}
+
+nav .buttons {
+    display: flex;
+    align-items: center;
+}
+
+nav .buttons button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(7, 113, 219);
+    transition: 0.2s ease;
+}
+
+nav .buttons button:hover {
+    background-color: black;
+    border: 2px solid rgb(7, 113, 219);
+    box-shadow: 0 0 10px 4px rgb(7, 113, 219);
+}
+
+.section {
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 600px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #00e3ff;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    color: #d0f0e0;
+    line-height: 1.6;
+}
+
+.booking {
+    width: 31%;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.booking h2 {
+    color: #00e3ff;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.booking-form label {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.booking-form button {
+    padding: 15px;
+    width: 60%;
+    display: flex;
+    background: #00BFFF;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin-left: 75px;
+    margin-right: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+    background: #009acd;
+    box-shadow: 0 0 12px 2px rgba(0,191,255,0.5);
+}
+
+.booking-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}

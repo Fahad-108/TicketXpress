@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up form</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" type="image/png" href="logo.jpeg">
+</head>
+<body>
+    <div class="box">
+        <form>
+            <h2>Sign Up</h2>
+            <div class="input">
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="input">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input">
+                <input type="password" placeholder="Password" pattern=".{8}"
+                    title="Password must be exactly 8 characters long" required>
+            </div>
+            <div class="remember">
+                <label><input type="checkbox" required> I agree to the terms & conditions</label>
+            </div>
+            <button type="button">Sign Up</button>
+            <div class="signup-link">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

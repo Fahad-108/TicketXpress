@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Confirmation - TicketXpress</title>
+    <link rel="icon" type="image/png" href="logo.jpeg">
+    <link rel="stylesheet" href="confirmation.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">TicketXpress</div>
+        <div class="links">
+            <a href="home.html">Home</a>
+            <a href="routes.html">Routes</a>
+            <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="buttons">
+            <button onclick="window.location.href='index.html'">Logout</button>
+
+        </div>
+    </nav>
+
+    <section class="section confirmation">
+        <h2>Your Booking Details</h2>
+
+        <div class="booking-info">
+            <p><strong>Route:</strong> <span id="route-info"></span></p>
+            <p><strong>Date:</strong> <span id="departure-date"></span></p>
+            <p><strong>Time:</strong> <span id="departure-time"></span></p>
+            <p><strong>Bus Type:</strong> <span id="bus-type"></span></p>
+            <p><strong>Seats:</strong> <span id="num-seats"></span></p>
+        </div>
+
+        <div class="payment">
+            <h3>Payment Summary</h3>
+            <p><strong>Total Price:</strong> <span id="total-price"></span></p>
+            <button class="btn" onclick="makePayment()">Proceed to Payment</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 TicketXpress. All rights reserved.</p>
+    </footer>
+
+    <script src="confirmation.js"></script>
+</body>
+</html>

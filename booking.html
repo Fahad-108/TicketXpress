@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>Bus Ticket Booking - Book Now</title>
+    <link rel="icon" type="image/png" href="logo.jpeg">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">TicketXpress</div>
+        <div class="links">
+            <a href="home.html">Home</a>
+            <a href="routes.html">Routes</a>
+            <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="buttons">
+            <button onclick="window.location.href='index.html'">Logout</button>
+
+        </div>
+    </nav>
+
+    <section class="section booking">
+        <h2>Book Your Bus Ticket</h2>
+        <form id="bookingForm" class="booking-form" onsubmit="saveBookingDetails(event)">
+
+            <label for="route">Select Route:</label>
+            <select name="route" id="route" required>
+                <option value="" disabled selected>Select a Route</option>
+                <option value="Gujrat → Lahore" standard-price="1100" luxury-price="1500">Gujrat → Lahore
+                </option>
+                <option value="Gujrat → Islamabad" standard-price="1200" luxury-price="1600">Gujrat →
+                    Islamabad</option>
+                <option value="Islamabad → Murree" standard-price="800" luxury-price="1500">Islamabad → Murree
+                </option>
+                <option value="Islamabad → Lahore" standard-price="1500" luxury-price="2000">Islamabad →
+                    Lahore</option>
+                <option value="Karachi → Multan" standard-price="4500" luxury-price="6000">Karachi → Multan
+                </option>
+                <option value="Rawalpindi → Peshawar" standard-price="1000" luxury-price="1500">Rawalpindi →
+                    Peshawar</option>
+                <option value="Lahore → Faisalabad" standard-price="900" luxury-price="1500">Lahore →
+                    Faisalabad</option>
+                <option value="Karachi → Quetta" standard-price="2500" luxury-price="3500">Karachi → Quetta
+                </option>
+                <option value="Lahore → Sialkot" standard-price="1000" luxury-price="1500">Lahore → Sialkot
+                </option>
+                <option value="Rawalpindi → Swat" standard-price="1300" luxury-price="2000">Rawalpindi → Swat
+                </option>
+            </select>
+
+            <label for="date">Departure Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Departure Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="bus-type">Bus Type:</label>
+            <select name="bus-type" id="bus-type" required>
+                <option value="" disabled selected>Select Bus Type</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Standard">Standard</option>
+            </select>
+
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" name="seats" min="1" max="10" required>
+
+            <button type="submit" class="btn">Proceed to Confirmation</button>
+        </form>
+    </section>
+
+    <script src="booking.js"></script>
+
+</body>
+</html>

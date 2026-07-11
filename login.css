@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #1a1a1a;
+    box-shadow: 0 0 50px #d0e0d1;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.input {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+}
+
+input[type="password"] {
+    color-scheme: dark;
+}
+
+
+input {
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.remember {
+    margin: 10px 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember label {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember input {
+    width: 16px;
+    height: 16px;
+    accent-color: #d0e0d1;
+}
+
+a {
+    color: #d0e0d1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #d0e0d1;
+    box-shadow: 0 0 10px #d0e0d1;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.signup-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.signup-link p {
+    color: white;
+}
+
+.signup-link p a {
+    color: #d0e0d1;
+    text-decoration: none;
+}
+
+.signup-link p a:hover {
+    text-decoration: underline;
+}
